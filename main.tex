@@ -1,0 +1,46 @@
+\documentclass[twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+
+\title{YouTube Thesis\\
+{\Large University of Youtube}
+}
+
+\newgeometry{
+    top=0.75in,
+    bottom=0.75in,
+    outer=0.75in,
+    inner=1.5in,
+}
+
+\author{John Doe}
+\date{October 2023}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Abstract}
+A thesis about using YouTube. It is really cool.
+
+\chapter*{Dedication}
+For my subscribers... 
+
+\chapter*{Acknowledgements}
+I want to thank...
+
+\tableofcontents
+\listoffigures
+
+\include{chapters/ch-YoutubeButtons}
+\include{chapters/ch-Subscribers}
+\include{chapters/Conclusions}
+
+\appendix
+\include{chapters/Appendix}
+
+\bibliographystyle{plain}
+\bibliography{references/ref}
+
+\end{document}
